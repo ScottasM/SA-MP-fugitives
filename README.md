@@ -13,3 +13,18 @@ store robbing has 1 surfing bot
 hit and run has only the driver.
   
 This code was originally written in lithuanian language, so i tried to explain as much as i can. Happy to help if you can't understand something.
+
+Installation : 
+
+Add PDbegliai.amx to your filterscrips folder. (Or compile PDbegliai.pwn with all the changes you need)
+Add PDbegliai to filterscripts line in server.cfg 
+Add FCNPC and streamer, sscanf (if you don't have) plugins to your server
+Done. 
+
+To test the system out use /testfugitive to launch them and /telenpc to teleport.
+
+Here is a video we made to showcase the system. It is in lithuanian, but you can see how it works even without understanding the language
+https://www.youtube.com/watch?v=6onQq9nQEDg&t=36s
+
+
+
