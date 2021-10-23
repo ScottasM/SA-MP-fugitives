@@ -24,7 +24,7 @@ Done.
 To test the system out use /testfugitive to launch them and /telenpc to teleport.
 
 Here is a video we made to showcase the system. It is in lithuanian, but you can see how it works even without understanding the language
-https://www.youtube.com/watch?v=6onQq9nQEDg&t=36s
+https://www.youtube.com/watch?v=6onQq9nQEDg
 
 
 
