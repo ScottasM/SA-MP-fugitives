@@ -23,7 +23,7 @@
 
 
 #define f(%0) (format(globalStringas, 256, %0), globalStringas)
-#define Error(%1,%2) SendClientMessage(%1,0xF06666FF,f("× {EE8787}%s",%2))
+#define Error(%1,%2) SendClientMessage(%1,0xF06666FF,f("ï¿½ {EE8787}%s",%2))
 #define Info(%1,%2) SendClientMessage(%1,0xDFEE32FF,f("o {D4E5C5}%s",%2))
 #define COL_WHITE "{FFFFFF}"
 #define Success(%1,%2) SendClientMessage(%1,0x47AB3FFF,f("+ %s", %2))
@@ -174,7 +174,7 @@ stock StartBeglys() // Start fugitives
 			}
 		}
 
-		// paleidþiamas update timeris.
+		// paleidï¿½iamas update timeris.
 		Begliai[BotTim]=SetTimer("BeglioTimeris", 2000, true);
 	}
 	else if(idas <= 6){ // no surfing bots. hit and run scenario
@@ -318,7 +318,7 @@ public  FCNPC_OnRespawn(npcid)
 forward FCNPC_OnFinishPlayback(npcid);
 public FCNPC_OnFinishPlayback(npcid)
 {
-	// èia baigus pathà yra parenkamas naujas ir uþdedamas jam vaþiuot.
+	// ï¿½ia baigus pathï¿½ yra parenkamas naujas ir uï¿½dedamas jam vaï¿½iuot.
 
 	if(npcid == Begliai[npcidas])
 	{
@@ -539,7 +539,7 @@ hook OnPlayerWeaponShot(playerid, weaponid, hittype, hitid, Float:fX, Float:fY, 
 
 CMD:cuff(playerid,params[])
 {
-    if(IsPlayerInAnyVehicle(playerid))return Error(playerid, "Transporto priemonëje surakinti negalima.");
+    if(IsPlayerInAnyVehicle(playerid))return Error(playerid, "Transporto priemonï¿½je surakinti negalima.");
     new id, Float:playerPos[ 3 ];
 	
     if(IsNumeric(params)){ // 
@@ -628,7 +628,7 @@ CMD:drag(playerid,params[])
 
 			return 1;
 		}
-	}
+	} 
 	return 1;
 }
 
@@ -654,7 +654,7 @@ public checkdrag()
 				new pingai = random(200)+600;
 				new msg[140];
 
-				format(msg,sizeof(msg),"Fugitive has been sucessfully locked up. You earned "GREEN1"%i €, %i XP.",pingai,xps);
+				format(msg,sizeof(msg),"Fugitive has been sucessfully locked up. You earned "GREEN1"%i ï¿½, %i XP.",pingai,xps);
 				Success(player, msg);
 
 				FCNPC_Destroy(i);
@@ -705,4 +705,6 @@ GetXYBehindPlayer(playerid, &Float:q, &Float:w,&Float:z, Float:distance)
     GetPlayerFacingAngle(playerid, a);
     q += (distance * -floatsin(-a, degrees));
     w += (distance * -floatcos(-a, degrees));
-}
+} 
+
+// a 
